@@ -18,17 +18,17 @@ class CategoriesRepository implements ICategoriesRepository {
       description
     });
 
-    console.log(category)
-
     await this.repository.save(category);
   }
 
   async list(): Promise<Category[]> {
-    return await this.repository.find();
+    const categories = await this.repository.find();
+    return categories;
   }
 
   async findByName(name: string): Promise<Category | undefined> {
-    return await this.repository.findOne(name);
+    const category = await this.repository.findOne({ name });
+    return category;
   }
 }
 
