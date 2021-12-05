@@ -6,8 +6,8 @@
   "author": "Cass",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "test": "jest"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "jest": "^27.4.3",
     "ts-jest": "^27.1.0",
     "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
     "typescript": "^4.5.2"
   }
 }
