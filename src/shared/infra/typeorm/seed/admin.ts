@@ -16,6 +16,10 @@ async function create() {
     );
 
     await connection.close();
+
+    return {
+        data: "Succesfully created admin user!\nCredentials\nEmail: admin@rentx.com\nPassword: admin"
+    };
 }
 
-create().then(() => console.log("Admin user created!"));
+create().then((response) => console.log(response.data));
