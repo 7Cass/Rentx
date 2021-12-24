@@ -9,7 +9,7 @@ import { ISpecificationsRepository } from "@modules/cars/repositories/ISpecifica
 import { SpecificationsRepository } from "@modules/cars/infra/typeorm/repositories/SpecificationsRepository";
 
 import { IUsersRepository } from "@modules/accounts/repositories/IUserRepository";
-import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UserRepository";
+import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UsersRepository";
 
 import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 import { CarsRepository } from "@modules/cars/infra/typeorm/repositories/CarsRepository";
