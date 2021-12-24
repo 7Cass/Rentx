@@ -36,13 +36,13 @@ describe("List Categories", () => {
             password: "admin",
         }); 
 
-        const { token } = loginResponse.body;
+        const { refresh_token } = loginResponse.body;
 
 
         await request(app).post("/categories").send({
             name: "Category Supertest", 
             description: "Category Supertest" 
-        }).set({ Authorization: `Bearer ${token}` });
+        }).set({ Authorization: `Bearer ${refresh_token}` });
 
         const response = await request(app).get("/categories");
 
