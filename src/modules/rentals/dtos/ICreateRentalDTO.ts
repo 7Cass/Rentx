@@ -1,5 +1,3 @@
-
-
 interface ICreateRentalDTO {
     user_id: string;
     car_id: string;
